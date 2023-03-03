@@ -1,0 +1,17 @@
+No#07//LED fire Effect 
+int Ledyellow1=11;
+int Ledred=10;
+int Ledyellow2=9;
+void setup()
+{
+pinMode(Ledyellow1,OUTPUT);
+pinMode(Ledred,OUTPUT);
+pinMode(Ledyellow2,OUTPUT);
+}
+void loop()
+{
+analogWrite(Ledyellow1,random(300));
+analogWrite(Ledred,random(300));
+analogWrite(Ledyellow2,random(300));
+delay(500);
+}
