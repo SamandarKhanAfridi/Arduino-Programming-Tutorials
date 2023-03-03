@@ -1,0 +1,43 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//GATS AND,OR,XOR,NOT
+int a=31;
+int b=230;
+int c;
+int d;
+int e;
+int f; 
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600);
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+int nd=AND(a,b); 
+Serial.println(nd); 
+delay(2000); 
+int oor=OR(a,b); 
+Serial.println(oor);
+delay(2000); 
+int xoor=XOR(a,b); 
+Serial.println(xoor); 
+delay(2000); 
+int noor=NOT(a); 
+Serial.println(noor);
+delay(2000);
+}
+int AND(int a,int b) {
+c=a&b; 
+return c; 
+}
+int OR(int a,int b) {
+d=a|b; 
+return d; 
+}
+int XOR(int a,int b) {
+e=a^b; 
+return e;
+}
+int NOT(int a) {
+f=~a;
+return f; 
+}
