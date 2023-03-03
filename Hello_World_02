@@ -1,0 +1,10 @@
+//Hello world 
+void setup() {
+Serial.begin(9600); 
+}
+void loop() {
+Serial.println("Samandar Khan Afridi"); 
+delay(1000); 
+Serial.println("Studing BE Electrical Engineering in QUEST Nawabshah"); 
+delay(500);
+}
