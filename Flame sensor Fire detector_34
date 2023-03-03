@@ -1,0 +1,26 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Flame sensor Fire detector 
+int analogPin=A0;
+int ledPin=13; 
+int buzzerPin=12;
+void setup() { 
+// put your setup code here, to run once:
+pinMode(analogPin,INPUT);
+pinMode(ledPin,OUTPUT);
+pinMode(buzzerPin,OUTPUT); 
+Serial.begin(9600); 
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+int analogVal=analogRead(analogPin); 
+if(analogVal<800) {
+digitalWrite(ledPin,HIGH);
+digitalWrite(buzzerPin,HIGH);
+Serial.println(" ,There is FIRE detected");
+}
+else {digitalWrite(ledPin,LOW); 
+digitalWrite(buzzerPin,LOW); 
+Serial.println(" ,There is no FIRE detected"); 
+}
+delay(1000); 
+}
