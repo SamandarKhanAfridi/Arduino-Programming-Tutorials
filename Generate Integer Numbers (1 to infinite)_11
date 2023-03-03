@@ -1,0 +1,13 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Generate Integer Numbers (1 to infinite) 
+int i; 
+int n=0; 
+void setup() {
+Serial.begin(9600);
+}
+void loop() {
+i=1+n; 
+n++; 
+Serial.println(i); 
+delay(500); 
+}
