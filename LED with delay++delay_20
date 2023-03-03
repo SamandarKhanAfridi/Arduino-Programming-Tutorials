@@ -1,0 +1,16 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//LED with delay++delay 
+int ledPin = 13; 
+int timeDelay = 500; 
+void setup() { 
+// put your setup code here, to run once: 
+pinMode(ledPin,OUTPUT); 
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+digitalWrite(ledPin,HIGH);
+delay(timeDelay); 
+digitalWrite(ledPin,LOW);
+delay(timeDelay); 
+timeDelay=timeDelay+100; 
+}
