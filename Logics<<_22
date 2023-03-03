@@ -1,0 +1,13 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah)
+int a=10;
+int b=4; 
+int result=a<<b;
+//this is bitwise operators which shift the bit 
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600); 
+Serial.println(result); 
+}
+void loop() { 
+// put your main code here, to run repeatedly:
+}
