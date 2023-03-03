@@ -1,0 +1,28 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Arithematic operators(+,-,*,/,%) 
+int x=5; 
+int y=2;
+float p=3;
+float q=2;
+int a;
+int b;
+int c;
+float d; 
+int e; 
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600); 
+int a=x+y;
+int b=x-y; 
+int c=x*y; 
+float d=p/q;
+int e=x%y; 
+Serial.println(a); 
+Serial.println(b);
+Serial.println(c); 
+Serial.println(d); 
+Serial.println(e);
+}
+void loop() {
+// put your main code here, to run repeatedly: 
+}
