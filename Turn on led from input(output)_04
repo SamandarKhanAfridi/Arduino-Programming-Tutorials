@@ -1,0 +1,14 @@
+// turn on led from input(output) 
+int Ledpin=13;
+int Inpin=7;
+int Val=0; 
+void setup()
+{
+  pinMode(Ledpin,OUTPUT);
+  pinMode(Inpin,INPUT);
+}
+void loop()
+{
+  Val=digitalRead(Inpin);
+  digitalWrite(Ledpin,Val);
+}
