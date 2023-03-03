@@ -1,0 +1,16 @@
+//Pulsating LED 
+int Ledpin=11; 
+float sinval; 
+int Ledval;
+void setup() {
+pinMode(Ledpin,OUTPUT);
+}
+void loop() {
+for(int x=0;x<180;x++) 
+  {
+    sinval=(sin(x*(3.1412/180)));
+    Ledval=int(sinval*255);
+    analogWrite(Ledpin,Ledval);
+    delay(25); 
+  } 
+}
