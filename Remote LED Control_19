@@ -1,0 +1,81 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah)
+#include<IRremote.h>
+int irPin=A0;
+IRrecv irrecv(irPin);
+decode_results Results; 
+int led_1=1,led_2=2,led_3=3,led_4=4,led_5=5,le d_6=6,led_7=7,led_8=8,led_9=9,led_10=10; 
+void setup() {
+irrecv.enableIRIn(); 
+pinMode(1,OUTPUT); 
+pinMode(2,OUTPUT);
+pinMode(3,OUTPUT);
+pinMode(4,OUTPUT);
+pinMode(5,OUTPUT); 
+pinMode(6,OUTPUT); 
+pinMode(7,OUTPUT); 
+pinMode(8,OUTPUT); 
+pinMode(9,OUTPUT); 
+pinMode(10,OUTPUT);
+}
+void loop()
+{ 
+if(irrecv.decode(&Results))
+{
+switch(Results.value) { 
+case 16753245:
+digitalWrite(1,0);
+digitalWrite(2,0);
+digitalWrite(3,0);
+digitalWrite(4,0); 
+digitalWrite(5,0);
+digitalWrite(6,0);
+digitalWrite(7,0); 
+digitalWrite(8,0);
+digitalWrite(9,0);
+digitalWrite(10,0);
+delay(100); 
+break; 
+case 16724175: 
+digitalWrite(1,HIGH);
+delay(100); 
+break; 
+case 16718055:
+digitalWrite(2,HIGH); 
+delay(100); 
+break; 
+case 16743045: 
+digitalWrite(3,HIGH); 
+delay(100); 
+break; 
+case 16716015: 
+digitalWrite(4,HIGH); 
+delay(100);
+break; 
+case 16726215: 
+digitalWrite(5,HIGH);
+delay(100);
+break; 
+case 16734885: 
+digitalWrite(6,HIGH); 
+delay(100);
+break; 
+case 16728765: 
+digitalWrite(7,HIGH); 
+delay(100); 
+break; 
+case 16730805:
+digitalWrite(8,HIGH); 
+delay(100); 
+break; 
+case 16732845:
+digitalWrite(9,HIGH); 
+delay(100); 
+break; 
+case 16756815: 
+digitalWrite(10,HIGH); 
+delay(100);
+break; 
+}
+irrecv.resume(); 
+}
+}
