@@ -1,0 +1,22 @@
+o#30//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//LED ON 1 and OFF 2 from Serial Monitor
+int a; 
+int pin=11;
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600); 
+pinMode(pin,OUTPUT); 
+}
+void loop() {
+// put your main code here, to run repeatedly: 
+Serial.println("Enter 1 for ON and 2 for OFF");
+Serial.setTimeout(1500); 
+a=Serial.parseInt(); 
+if(a==1) {digitalWrite(pin,HIGH); 
+Serial.println("LED is ON"); 
+}
+if(a==2) {digitalWrite(pin,LOW);
+Serial.println("LED is OFF");
+}
+delay(5000); 
+}
