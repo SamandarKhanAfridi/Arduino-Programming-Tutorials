@@ -2,8 +2,6 @@
 //Arithematic operators(+,-,*,/,%) 
 int x=5; 
 int y=2;
-float p=3;
-float q=2;
 int a;
 int b;
 int c;
@@ -12,10 +10,11 @@ int e;
 void setup() { 
 // put your setup code here, to run once: 
 Serial.begin(9600); 
+Serial.println("Arithematic Operations Usage");
 int a=x+y;
 int b=x-y; 
 int c=x*y; 
-float d=p/q;
+float d=x/y;
 int e=x%y; 
 Serial.println(a); 
 Serial.println(b);
