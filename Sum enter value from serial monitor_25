@@ -1,0 +1,23 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+int a;
+//i send a=5
+int b;
+//i send b=5 
+int c;
+// sum will be 10 
+void setup() { 
+// put your setup code here, to run once:
+Serial.begin(9600);
+} 
+void loop() { 
+// put your main code here, to run repeatedly:
+Serial.println("Enter valu of a");
+Serial.setTimeout(5000); 
+a=Serial.parseInt(); 
+Serial.println("Enter value of b"); 
+Serial.setTimeout(5000); 
+b=Serial.parseInt();
+c=a+b; 
+Serial.println(c);
+delay(3000);
+}
