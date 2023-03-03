@@ -1,0 +1,18 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah)
+//Decimal values for any String Sentence 
+char myStr[]="This is a string";
+void setup() {
+// put your setup code here, to run once: 
+Serial.begin(9600);
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+for(byte i=0;i<sizeof(myStr)-1;i++)
+{
+Serial.print(i,DEC); 
+Serial.print("="); 
+Serial.print(myStr[i]); 
+Serial.println();
+}
+delay(5000);
+}
