@@ -1,0 +1,19 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Functions Uses 
+int i;
+int myArray[10]={1,2,3,4,5,6,7,8,9,10}; 
+void setup() {
+Serial.begin(9600); 
+}
+void loop() {
+for(int i=0;i<10;i++) {
+int val =myFunction(myArray[i],myArray[i+1]);
+Serial.println(val); 
+delay(1000); 
+}
+}
+int myFunction(int x,int y) {
+int result;
+result=x*y;
+return result; 
+}
