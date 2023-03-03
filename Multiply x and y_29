@@ -1,0 +1,19 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Multiply x and y int x=5;
+int y=6; 
+int result;
+void setup() { 
+// put your setup code here, to run once:
+Serial.begin(9600); 
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+int var=multiply(x,y);
+Serial.println(result); 
+delay(1000);
+}
+int multiply(int x,int y)
+{
+result=x*y;
+return result; 
+}
