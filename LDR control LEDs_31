@@ -1,0 +1,19 @@
+o#31//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//LDR control LEDs
+#define ldrPin 7
+#define ledPin 13
+void setup() { 
+// put your setup code here, to run once: 
+pinMode(ldrPin,INPUT); 
+pinMode(ledPin,OUTPUT);
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+int var=digitalRead(ldrPin); 
+if (var==LOW) {
+digitalWrite(ledPin,HIGH);
+}
+else{ 
+digitalWrite(ledPin,LOW);
+} 
+}
