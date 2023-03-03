@@ -1,0 +1,25 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//Size of DataType 
+int x=3; 
+char t="g";
+float y=3.5;
+double z=10; 
+int a=sizeof(x); 
+int b=sizeof(y); 
+int c=sizeof(z);
+int d=sizeof(t); 
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600); 
+}
+void loop() { 
+// put your main code here, to run repeatedly: 
+Serial.println(a); 
+delay(1000); 
+Serial.println(b);
+delay(1000); 
+Serial.println(c);
+delay(1000);
+Serial.println(d); 
+delay(1000); 
+}
