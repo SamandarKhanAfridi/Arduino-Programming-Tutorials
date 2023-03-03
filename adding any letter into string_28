@@ -1,0 +1,15 @@
+//Samandar Khan Afridi (19-Electrical- QUEST Nawabshah) 
+//adding any letter into string
+void setup() { 
+// put your setup code here, to run once: 
+Serial.begin(9600); 
+}
+void loop() { 
+// put your main code here, to run repeatedly:
+Serial.write(65); 
+int bytes=Serial.write("HELLO"); 
+Serial.println(" "); 
+delay(2000);
+Serial.println(bytes); 
+delay(2000); 
+}
