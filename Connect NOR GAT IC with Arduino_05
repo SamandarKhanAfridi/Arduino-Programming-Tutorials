@@ -1,0 +1,25 @@
+//Connect NOR GAT IC with Arduino 
+int Vcc=13;
+int inpin1=7; 
+int inpin2=6; 
+void setup(){
+pinMode(Vcc,OUTPUT); 
+pinMode(inpin1,OUTPUT); 
+pinMode(inpin2,OUTPUT);
+}
+void loop()
+{
+digitalWrite(Vcc,HIGH); 
+digitalWrite(inpin1,HIGH); 
+digitalWrite(inpin2,HIGH); 
+delay(4000); 
+digitalWrite(inpin1,LOW); 
+digitalWrite(inpin2,HIGH); 
+delay(4000); 
+digitalWrite(inpin1,HIGH); 
+digitalWrite(inpin2,LOW); 
+delay(4000); 
+digitalWrite(inpin1,LOW); 
+digitalWrite(inpin2,LOW); 
+delay(4000);
+}
